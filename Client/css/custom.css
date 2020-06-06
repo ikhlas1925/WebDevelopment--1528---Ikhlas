@@ -1,0 +1,14 @@
+/* index.html css */
+
+.amdt-nav-bar {
+    margin-left: 40%;
+    
+  }
+
+  .amdt-nav-text{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    letter-spacing: 0px;
+  }

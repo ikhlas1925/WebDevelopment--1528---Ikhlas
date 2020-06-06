@@ -3906,7 +3906,7 @@ tbody.collapse.show {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: #007bff;
+  background-color: #2b68a8;
 }
 
 .nav-fill .nav-item {
@@ -4338,11 +4338,11 @@ tbody.collapse.show {
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(253, 48, 48, 0.5);
 }
 
 .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
-  color: rgba(0, 0, 0, 0.7);
+  color: rgba(207, 19, 19, 0.7);
 }
 
 .navbar-light .navbar-nav .nav-link.disabled {
