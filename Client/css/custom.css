@@ -36,3 +36,8 @@ li a{
   width: 100%;
   transition: width .3s;
 }
+
+.amdt-footer {
+  color: black;
+  padding: 10px;
+}
