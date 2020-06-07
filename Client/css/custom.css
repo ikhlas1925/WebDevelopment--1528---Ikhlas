@@ -8,10 +8,31 @@
   padding-top: 20px;
 }
 .amdt-nav-text {
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
   color: #1a1a1a;
   text-decoration: none;
-  font-weight: 450;
-  letter-spacing: 0px;
+  font-weight: 700;
+}
+
+li{
+  display: inline-block;
+}
+
+li a{
+  display: inline-block;
+}
+
+.link-underline::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 1px;
+  background-color: #1a1a1a;
+  transition: width .3s;
+}
+
+.link-underline:hover::after{
+  width: 100%;
+  transition: width .3s;
 }
