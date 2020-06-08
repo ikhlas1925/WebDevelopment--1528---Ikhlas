@@ -10,13 +10,10 @@
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/custom.css" />
     <link rel="stylesheet" href="css/hamburger.scss" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
-        $(document).ready(function () {
-            $("#amdt-nav-bar").load("HTML/partials/navbar.html");
+        $(document).ready(function() {
             $("#amdt-footer-bar").load("HTML/partials/footer.html");
         });
     </script>
@@ -24,18 +21,36 @@
 
 <body>
 
-  <!--NavBar Import-->
-    <header>
-        <div id="amdt-nav-bar"></div>
-    </header>
-    <div class="menu-wrapper">
-        <div class="hamburger-menu"></div>	  
-      </div>      
+    <nav class="fixed-top">
+        <div class="logo">
+            <a href="index.html">
+                <img src="Assets/img/index/AMDT-School-of-Creativity-logo.png" width="25%" height="25%" alt="AMDT - School of Creativity">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a class="link-underline" href="#">TESTIMONIALS</a>
+            </li>
+            <li>
+                <a class="link-underline" href="#">ABOUT THE DEVELOPER</a>
+            </li>
+            <li>
+                <a class="link-underline" href="#">CONTACT US</a>
+            </li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
     <!--Section 1-->
 
 
     <!--Footer Import-->
     <div id="amdt-footer-bar"></div>
+    <script src="js/function.js"></script>
 </body>
-<script src="js/function.js"></script>
+
+
 </html>
