@@ -2,6 +2,7 @@
 new fullpage('#fullpage', {
     autoScrolling: true,
     keboardScrolling: true,
+    fitToSection: true,
 })
 
 //Hamburger Setup

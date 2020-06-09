@@ -50,7 +50,6 @@ nav {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    min-height: 20vh;
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
     font-weight: 600;
@@ -119,6 +118,15 @@ nav {
     }
 }
 
+@media screen and (max-width:1024px){
+    .chevron-bod div{
+        display: none;
+    }
+    #creativity{
+        margin-top: 10%;
+    }
+}
+
 @media screen and (max-width:768px) {
     body {
         overflow-x: hidden;
@@ -182,7 +190,7 @@ nav {
 
 @media screen and (max-width:500px) {
     .nav-links a{
-        font-size: 12px;
+        font-size: 14px;
     }
     .chevron-bod div{
         display: none;
@@ -221,7 +229,7 @@ nav {
 
 .section1{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-color: #000;
 }
 
@@ -441,7 +449,7 @@ nav {
   
   .text {
     display: block;
-    margin-top: 60%;
+    margin-top: 65%;
     margin-left: -20px;
     font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
     font-size: 12px;
@@ -457,13 +465,3 @@ nav {
       opacity: 1;
     }
   }
-
-.description{
-    margin: 5%;
-    width: 50%;
-}
-
-.description p{
-    margin: 50px 0px;
-}
-
