@@ -1,3 +1,9 @@
+//FullPage Setup
+new fullpage('#fullpage', {
+    autoScrolling: true,
+    keboardScrolling: true,
+})
+
 //Hamburger Setup
 const navSlide = () => {
     const burger = document.querySelector('.burger');
