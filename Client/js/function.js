@@ -1,5 +1,3 @@
-
-
 //Hamburger Setup
 const navSlide = () => {
     const burger = document.querySelector('.burger');
@@ -33,3 +31,20 @@ const creativity = document.querySelectorAll("#creativity path");
 for (let i = 0; i < creativity.length; i++) {
     console.log(`Letter ${i} is ${creativity[i].getTotalLength()}`);
 } 
+
+//NavBar
+$(document).ready(function() {
+
+    $(window).scroll(function() {
+
+        var height = $('.wrap').height();
+        var scrollTop = $(window).scrollTop();
+
+        if (scrollTop >= height - 40) {
+            $('.nav-container').addClass('solid-nav');
+        } else {
+            $('.nav-container').removeClass('solid-nav');
+        }
+
+    });
+});
