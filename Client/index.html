@@ -9,7 +9,8 @@
     <title>AMDT - School of Creativity</title>
 
     <link rel="stylesheet" href="css/bootstrap.css" />
-    <link rel="stylesheet" href="css/fullpage.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+    
     <link rel="stylesheet" href="css/custom.css" />
     <link rel="stylesheet" href="css/style.css" />
 
@@ -30,7 +31,7 @@
 <body>
 
     <!--Navbar-->
-    <nav>
+    <nav class="fixed-top">
         <div class="logo">
             <a href="index.html">
                 <img src="Assets/img/index/AMDT_logo_White.png" width="25%" height="25%"
@@ -75,7 +76,50 @@
         </section>
 
         <!--Section 2-->
-        
+        <section class="section s2">
+            <div class="container gallery-container">
+
+                <h3 class="display-4 text-light">Our Creative Course</h3>
+                
+                <div class="tz-gallery">
+            
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4">
+                            <a class="lightbox" href="../images/park.jpg">
+                                <img src="Assets/img/index/Courses/advetising_t.jpg" alt="Park">
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <a class="lightbox" href="../images/bridge.jpg">
+                                <img src="Assets/img/index/Courses/animation_t.jpg" alt="Bridge">
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <a class="lightbox" href="../images/tunnel.jpg">
+                                <img src="Assets/img/index/Courses/fashion_t.jpg" alt="Tunnel">
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <a class="lightbox" href="Assets/img/index/Courses/graphics_t.jpg">
+                                <img src="Assets/img/index/Courses/graphics_t.jpg" alt="Coast">
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <a class="lightbox" href="../images/rails.jpg">
+                                <img src="Assets/img/index/Courses/interior_t.jpg" alt="Rails">
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <a class="lightbox" href="../images/traffic.jpg">
+                                <img src="Assets/img/index/Courses/photography_t.jpg" alt="Traffic">
+                            </a>
+                        </div>
+                    </div>
+            
+                </div>
+            
+            </div>
+        </section>
 
         <!--Section 3-->
         <section class="section s3">
@@ -86,8 +130,11 @@
     <!--Footer Import-->
     <div id="amdt-footer-bar"></div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+<script>
+    baguetteBox.run('.tz-gallery');
+</script>
     <!--JS Script Import-->
-    <script src="js/fullpage.min.js"></script>
     <script src="js/function.js"></script>
 
 </body>

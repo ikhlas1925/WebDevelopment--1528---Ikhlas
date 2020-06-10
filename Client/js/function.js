@@ -1,9 +1,4 @@
-//FullPage Setup
-new fullpage('#fullpage', {
-    autoScrolling: true,
-    keboardScrolling: true,
-    fitToSection: true,
-})
+
 
 //Hamburger Setup
 const navSlide = () => {
