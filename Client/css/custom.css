@@ -588,7 +588,7 @@ body {
 .tile .grid-text {
     /*   z-index:99; */
     position: absolute;
-    padding: 30px;
+    padding: 5%;
     height: calc(100% - 60px);
 }
 .tile h1 {
