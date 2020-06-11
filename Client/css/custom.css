@@ -66,6 +66,11 @@ nav {
     padding-top: 2%;
 }
 
+nav a img{
+    height: 25%;
+    width: 25%;
+}
+
 .nav-links {
     padding-top: 2%;
     display: flex;
@@ -127,7 +132,17 @@ nav {
 }
 
 @media screen and (max-width: 1024px) {
-    
+    nav a img{
+        height: 50%;
+        width: 50%;
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+    }
+
     section h3{
         padding-top: 60%;
     }
@@ -148,6 +163,11 @@ nav {
     nav {
         font-weight: 300;
     }
+    nav a img{
+        width: 25%;
+        height: 25%;
+    }
+
     li {
         display: inline-block;
     }
@@ -209,8 +229,12 @@ nav {
     #creativity {
         margin-top: -60%;
     }
+    .nav-links{
+        height: 1100%;
+    }
+
     .nav-links a {
-        font-size: 14px;
+        font-size: 15px;
     }
     .chevron-bod div {
         display: none;
