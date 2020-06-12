@@ -793,20 +793,54 @@ footer {
 /*New Footer*/
 
 /*Testimonials css*/
-.human-features-container {
-    margin-top: 3%;
+.amdt-features-container {
+    margin-top: 4%;
   }
   
   .amdt-features-main {
     margin: 10%;
   }
   
-  .human-features-form {
+  .amdt-features-form {
     margin-right: 21%;
   }
   
   /* Common css */
-  .human-removed {
+  .loader-removed {
     display: none;
   }
   
+ /*Contact Us*/
+ .header{
+     position: relative;
+     margin-top: 10%;
+ }
+
+ .amdt-contact-form{
+     position: relative;
+     margin-top: 12%;
+     left: 50%;
+     transform: translate(-25%, -50%);
+ }
+
+ input{
+     width: 50%;
+     margin: 20px 0;
+     background: black;
+     border: none;
+     outline: none;
+     padding-bottom: 24px;
+     border-bottom: 2px solid white;
+     font-weight: 100;
+     font-family: "Open Sans" ,sans-serif;
+ }
+
+ #msg{
+     margin-top: 60px;
+ }
+
+ ::-webkit-input-placeholder{
+     color: white;
+     font-size: 15px;
+     letter-spacing: 2px;
+ }

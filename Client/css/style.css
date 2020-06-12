@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
 *{
   margin: 0;
   padding: 0;
@@ -207,3 +207,19 @@ footer {
 .footer-btn button:hover{
   background: #f12020;
   }
+
+  .contact-btn button{
+    height: 40px;
+    width: 50%;
+    border: none;
+    border-radius: 100px;
+    outline: none;
+    background: #000;
+    font-size: 1.0625rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .3s;
+    }
+  .contact-btn button:hover{
+    background: #f12020;
+    }
