@@ -49,6 +49,12 @@ li a {
     letter-spacing: 0.025em;
     transition: background-color 0.2s linear;
 }
+.solid-nav {
+    position: fixed;
+    background-color: #000;
+    letter-spacing: 0.025em;
+    transition: background-color 0.2s linear;
+}
 .nav-container.solid-nav {
     background-color: #000;
     transition: background-color 0.2s linear;
@@ -155,6 +161,19 @@ nav a img{
     }
 }
 
+@media screen and (max-width:967px){
+    .nav-links a {
+        font-size: 15px;
+    }
+    nav a img{
+        height: 40%;
+        width: 40%;
+    }
+    #creativity {
+        margin-top: -25%;
+    }
+}
+
 @media screen and (max-width: 768px) {
 
     body {
@@ -189,7 +208,7 @@ nav a img{
     .nav-links {
         position: absolute;
         right: 0px;
-        height: 850%;
+        height: 750%;
         width: 100%;
         top: 0;
         display: flex;
@@ -772,3 +791,22 @@ footer {
 }
 */
 /*New Footer*/
+
+/*Testimonials css*/
+.human-features-container {
+    margin-top: 3%;
+  }
+  
+  .amdt-features-main {
+    margin: 10%;
+  }
+  
+  .human-features-form {
+    margin-right: 21%;
+  }
+  
+  /* Common css */
+  .human-removed {
+    display: none;
+  }
+  

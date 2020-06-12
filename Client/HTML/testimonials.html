@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="../Assets/img/index/tab_icon-01.png">
+    <title>AMDT - School of Creativity</title>
+
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/custom.css" />
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#amdt-creativity-svg").load("partials/creativity_index.html");
+        });
+    </script>
+
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="fixed-top solid-nav">
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../Assets/img/index/AMDT_logo_White.png"
+                    alt="AMDT - School of Creativity">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a class="link-underline" href="testimonials.html">TESTIMONIALS</a>
+            </li>
+            <li>
+                <a class="link-underline" href="developer.html">ABOUT THE DEVELOPER</a>
+            </li>
+            <li>
+                <a class="link-underline" href="contact.html">CONTACT US</a>
+            </li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+    <!--End of Navbar-->
+
+
+    <!--Section 1-->
+     <section class="content">
+         <div class="section1">
+        <div class="text-center amdt-features-main">
+            <h3 class="display-4 text-center text-light">Testimonials</h3>
+            <div class="container text-left human-features-container">
+              <div class="row">
+                <div class="col-6">
+                  <div class="font-weight-normal h3">What do you think about us</div>
+                  <p class="lead">
+                    We would love to hear!
+                  </p>
+                  <form id="featureFrm" class="human-features-form">
+                    <div class="form-group">
+                      <label>Your Name</label>
+                      <input
+                        id="username"
+                        type="text"
+                        class="form-control"
+                        placeholder="Your name"
+                      />
+                    </div>
+                    <div class="form-group">
+                    <label>Age</label>
+                      <input
+                        id="age"
+                        type="text"
+                        class="form-control"
+                        placeholder="Your Age"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label>Your suggestion</label>
+                      <textarea id="userfeature" class="form-control" rows="5"></textarea>
+                    </div>
+                    <div class="footer-btn">
+                      <button d="featureSubmitBtn" type="button" >Submit</button>
+                    </div>
+                  </form>
+                </div>
+                  <div id="featureLoadingDiv" class="human-removed text-center">
+                    <img src="/assets/spinner.gif" />
+                    <p><i>Sending data to our server ... </i></p>
+                  </div>
+                  <div class="col-6">
+                    <div class="card text-white bg-dark mb-3">
+                      <h5 class="card-header">Some of our Testimonials</h5>
+                      <div class="card-body">
+                        <p class="lead">
+                          
+                        </p>
+                        <ul class="list-group list-group-flush" id="feature-list">
+      
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                
+              </div>
+            </div>
+          </div>
+        <!--Footer-->
+    <footer>
+        <div class="main-content footer-stuff content">
+            <div class="left box">
+                <h2>
+                    A short story of us</h2>
+                <div class="content">
+                    <p>
+                        In 2005, two Artrepreneurs decided it was time to prove everyone who thought that Creative
+                        people cannot have successful careers, wrong. And the <strong>‘AMDT School of Creativity’</strong> was born...
+                    </p>
+                    <div class="social">
+                        <a href="https://www.facebook.com/AMDTSriLanka/"><span class="fab fa-facebook-f"></span></a>
+                        <a href="https://amdtlk.tumblr.com/"><span class="fab fa-twitter"></span></a>
+                        <a href="https://www.instagram.com/amdtlk/"><span class="fab fa-instagram"></span></a>
+                        <a href="https://amdtlk.tumblr.com/"><span class="fab fa-tumblr"></span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="center box">
+                <h2>
+                    Contacts Us</h2>
+                <div class="content">
+                    <div class="place">
+                        <span class="fas fa-map-marker-alt"></span>
+                        <span class="footer-text">317A, Galle Road, Colombo 04, Sri Lanka</span>
+                    </div>
+                    <div class="phone">
+                        <span class="fas fa-phone-alt"></span>
+                        <span class="footer-text">+94 114 381 981</span>
+                    </div>
+                </div>
+            </div>
+            <div class="right box">
+                <h2>
+                    Subscribe to email updates</h2>
+                <div class="content">
+                    <form action="#">
+                        <div class="email">
+                            <div class="footer-text">
+                                Email *</div>
+                            <input type="email" required>
+                        </div>
+
+                        <br />
+                        <div class="footer-btn">
+                            <button type="submit">Send</button>
+                    </div>
+                </form>
+                </div>
+                
+            </div>
+        </div>
+        </div>
+    </footer>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+    <script>
+        baguetteBox.run('.tz-gallery');
+    </script>
+    <!--JS Script Import-->
+    <script src="../js/function.js"></script>
+
+</body>
+
+</html>
