@@ -20,12 +20,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
-    <script>
-        $(document).ready(function () {
-            $("#amdt-creativity-svg").load("partials/creativity_index.html");
-        });
-    </script>
-
 </head>
 
 <body>
@@ -62,15 +56,17 @@
             <div class="header">
                 <h1 class="display-4 text-light text-center">Contact Us</h1>
                 <p class="lead text-center text-light">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    If you would like us to contact you, Please fill in the below form with real information. <br>You’ll
+                    also be subscribed to our mailing list.
+                    Hope you won’t mind. Don’t worry, we won’t spam you!
                 </p>
                 <div class="amdt-contact-form">
                     <input type="text" placeholder="Full Name">
-                    <input type="text" placeholder="E-mail">
+                    <input type="email" placeholder="E-mail">
                     <input type="text" id="msg" placeholder="Message">
                     <div class="contact-btn">
-                        <button d="contactSendBtn" type="button" >Send</button>
-                      </div>
+                        <button id="contactSendBtn" type="button">Send</button>
+                    </div>
                 </div>
             </div>
             <!--Footer-->

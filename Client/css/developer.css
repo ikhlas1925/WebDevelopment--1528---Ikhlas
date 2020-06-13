@@ -1,0 +1,294 @@
+body{
+    background-color: black;
+}
+
+/* index.html css */
+
+.amdt-nav-brand {
+    padding-top: 20px;
+}
+
+.amdt-nav-bar {
+    padding-top: 20px;
+}
+
+.amdt-nav-text {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+li {
+    display: inline-block;
+}
+
+li a {
+    display: inline-block;
+}
+
+.link-underline::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 1px;
+    background-color: white;
+    transition: width 0.3s;
+}
+
+.link-underline:hover::after {
+    width: 100%;
+    transition: width 0.3s;
+}
+
+.amdt-footer {
+    color: rgb(180, 180, 180);
+    background-color: #000000;
+    padding: 10px;
+}
+
+/*Nav*/
+.nav-container {
+    position: fixed;
+    letter-spacing: 0.025em;
+    transition: background-color 0.2s linear;
+}
+.solid-nav {
+    position: fixed;
+    width: 100%;
+    background-color: #000;
+    letter-spacing: 0.025em;
+    transition: background-color 0.2s linear;
+}
+.nav-container.solid-nav {
+    background-color: #000;
+    transition: background-color 0.2s linear;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    padding: 2%;
+    padding-top: 2%;
+}
+
+nav a img{
+    height: 25%;
+    width: 25%;
+}
+
+.nav-links {
+    padding-top: 2%;
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+.nav-links li {
+    list-style: none;
+}
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/*Hamburger*/
+
+.burger {
+    display: none;
+}
+
+.burger div {
+    background-color: white;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+.line1 {
+    width: 25px;
+    height: 2px;
+    background-color: white;
+}
+
+.line2 {
+    width: 20px;
+    height: 2px;
+    background-color: white;
+}
+
+.line3 {
+    width: 15px;
+    height: 2px;
+    background-color: white;
+}
+
+@media screen and (max-width: 1366px) {
+    .nav-links {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .nav-links {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    nav a img{
+        height: 35%;
+        width: 35%;
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        color: white;
+        font-size: 14px;
+    }
+
+    section h3{
+        padding-top: 60%;
+    }
+
+    .chevron-bod div{
+        display: none;
+    }
+}
+
+@media screen and (max-width:967px){
+    .nav-links a {
+        font-size: 15px;
+    }
+    nav a img{
+        height: 40%;
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    body {
+        overflow-x: hidden;
+    }
+    nav {
+        font-weight: 300;
+    }
+    nav a img{
+        width: 25%;
+        height: 25%;
+    }
+
+    li {
+        display: inline-block;
+    }
+    li a {
+        display: inline-block;
+    }
+    .link-underline::after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 1px;
+        background-color: white;
+        transition: width 0.3s;
+    }
+    .link-underline:hover::after {
+        width: 100%;
+        transition: width 0.3s;
+    }
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 600%;
+        width: 100%;
+        top: 0;
+        display: flex;
+        background-color: #000;
+        opacity: 95%;
+        flex-direction: column;
+        align-items: flex-end;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .nav-links a {
+        text-decoration: none;
+        color: white;
+        font-size: 25px;
+    }
+    .nav-links li {
+        opacity: 0;
+        margin-right: 10%;
+    }
+    .burger {
+        display: block;
+        padding-right: 10px;
+        padding-top: 10px;
+    }
+    .chevron-bod div {
+        display: none;
+    }
+
+    /*Testtimonials css*/
+    .amdt-test-main{
+        padding-top: 10%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    section h3{
+        padding-top: 75%;
+    }
+    .nav-links{
+        height: 1100%;
+    }
+
+    .nav-links a {
+        font-size: 15px;
+    }
+    .chevron-bod div {
+        display: none;
+    }
+}
+
+.nav-active {
+    transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-4px, 3px);
+    background-color: white;
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-4px, -4px);
+    background-color: white;
+    width: 25px;
+}
+
+.section1 {
+    width: 100%;
+}
+
+section h3{
+    margin-top: 5%;
+}

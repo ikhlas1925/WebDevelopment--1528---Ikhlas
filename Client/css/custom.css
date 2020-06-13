@@ -139,14 +139,14 @@ nav a img{
 
 @media screen and (max-width: 1024px) {
     nav a img{
-        height: 50%;
-        width: 50%;
+        height: 35%;
+        width: 35%;
     }
 
     .nav-links a {
         text-decoration: none;
         color: white;
-        font-size: 20px;
+        font-size: 14px;
     }
 
     section h3{
@@ -238,6 +238,11 @@ nav a img{
     }
     .chevron-bod div {
         display: none;
+    }
+
+    /*Testtimonials css*/
+    .amdt-test-main{
+        padding-top: 10%;
     }
 }
 
@@ -798,13 +803,19 @@ footer {
   }
   
   .amdt-test-main {
-    margin: 10%;
+    margin-top: 10%;
+    height: 100vh;
   }
   
   .amdt-test-form {
     margin-right: 21%;
   }
-  
+
+  @media screen and (max-width: 1024px){
+      .amdt-test-main{
+          padding-top: 10%;
+      }
+  }
   
   /* Common css */
   .loader-removed {
@@ -814,7 +825,8 @@ footer {
  /*Contact Us*/
  .header{
      position: relative;
-     margin-top: 10%;
+     margin-top: 15%;
+     height: 100vh;
  }
 
  .amdt-contact-form{
@@ -846,8 +858,32 @@ footer {
      letter-spacing: 2px;
  }
 
+ @media screen and (max-width: 1024px){
+     div .header{
+         margin-top: 15%;
+     }
+     div .amdt-contact-form{
+         margin-top: 18%
+     }
+ }
+
  @media screen and (max-width: 1366px){
      div .amdt-contact-form{
             padding-top: 5%;
+     }
+ }
+
+ @media screen and (max-width: 768px){
+    div .header{
+        padding-top: 5%;
+     }
+     div .amdt-contact-form{
+         margin-top: 25%;
+     }
+ }
+
+ @media screen and (max-width: 500px){
+     div .amdt-contact-form{
+         margin-top: 50%;
      }
  }
