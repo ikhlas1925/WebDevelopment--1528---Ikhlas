@@ -208,7 +208,7 @@ nav a img{
     .nav-links {
         position: absolute;
         right: 0px;
-        height: 750%;
+        height: 600%;
         width: 100%;
         top: 0;
         display: flex;
@@ -793,17 +793,18 @@ footer {
 /*New Footer*/
 
 /*Testimonials css*/
-.amdt-features-container {
+.amdt-test-container {
     margin-top: 4%;
   }
   
-  .amdt-features-main {
+  .amdt-test-main {
     margin: 10%;
   }
   
-  .amdt-features-form {
+  .amdt-test-form {
     margin-right: 21%;
   }
+  
   
   /* Common css */
   .loader-removed {
@@ -843,4 +844,10 @@ footer {
      color: white;
      font-size: 15px;
      letter-spacing: 2px;
+ }
+
+ @media screen and (max-width: 1366px){
+     div .amdt-contact-form{
+            padding-top: 5%;
+     }
  }
