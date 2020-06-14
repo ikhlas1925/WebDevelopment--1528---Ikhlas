@@ -223,3 +223,20 @@ footer {
   .contact-btn button:hover{
     background: #f12020;
     }
+
+    /*============ 12. Footer  ============*/
+footer {
+  background: #222; }
+  footer .contact-info h5 {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700; }
+  footer .contact-info p {
+    color: #fff;
+    font-size: 14px; }
+  footer hr {
+    border-color: #333; }
+  footer .copy {
+    font-size: 14px;
+    color: #aaa; }
+
