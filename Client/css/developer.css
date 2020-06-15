@@ -59,7 +59,7 @@ body {
   margin-bottom: 50px;
 }
 .heading h6 {
-  font-family: "Open-Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 18px;
   font-weight: 400;
   margin-bottom: 10px;
@@ -429,7 +429,7 @@ nav a img {
   .nav-links {
     position: absolute;
     right: 0px;
-    height: 600%;
+    height: 700%;
     width: 100%;
     top: 0;
     display: flex;
@@ -508,6 +508,9 @@ section h3 {
 }
 
 /*Banner*/
+#home{
+  margin-top: 8%;
+}
 .banner {
   width: 100%;
   -webkit-background-size: cover;
@@ -771,7 +774,6 @@ section.about .about-img img {
   position: relative;
   width: 100%;
   z-index: 1;
-  webkit-box-shadow: 0 0 85px 0 rgba(0, 0, 0, 0.14);
   box-shadow: 0 0 85px 0 rgba(0, 0, 0, 0.14);
 }
 .about-content {
@@ -793,7 +795,7 @@ section.about .about-content .about-heading span {
 }
 
 section.about .about-content p {
-  font-family: "Open-Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   line-height: 28px;
   padding-top: 10%;
   font-size: 20px;
@@ -914,7 +916,60 @@ section.about .about-content .about-button {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1024px) {
+  .banner{
+    height: 80vh;
+  }
+  .banner-caption{
+    margin-top: 10%;
+  }
+  .banner-caption h1{
+    margin-left: -10%;
+  }
+  .banner-caption p{
+    margin-left: -10%;
+  }
+  .contact{
+    margin-left: -15%;
+  }
+  .heading{
+    margin-left: 10%;
+  }
+  .chevron-bod {
+    margin-top: -5%;
+  }
+  .grid-cont .portfolio-text{
+    margin-top: -50%;
+  }
+  section.about .about-content p {
+    font-family: "Open Sans", sans-serif;
+    line-height: 35px;
+    font-size: 25px;
+    font-weight: 600;
+    margin-left: -15%;
+    margin-top: -15%;
+  }
+  .social-icons{
+    margin-left: -15%;
+  }
+  .about-img{
+    margin-left: 10%;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  #home{
+    top: 10%;
+  }
+  
+  .banner-md{
+    display: block;
+    width: 60%;
+    margin-left: 40%;
+    margin-top: 5%;
+    opacity: 0.5;
+  }
   .banner .banner-caption h1 {
     font-size: 46px;
   }
@@ -922,31 +977,78 @@ section.about .about-content .about-button {
     font-size: 17px;
   }
   .banner #home-svg {
-    height: 80px;
+    height: 150px;
   }
   section.banner-blog .banner-caption h1 {
     font-size: 32px;
   }
+  div .chevron-bod{
+    margin-top: -110%;
+  }
+  div .row{
+    flex-direction: column;
+  }
+  .about-img {
+    margin-left: 25%;
+    transform: translateX(25%);
+    height: 100%;
+    width: 100%;
+  }
+  .about-content{
+    margin-left: 25%;
+    width: 200%;
+  }
+  .social-icons{
+    margin-left: 30%;
+  }
+  section.about .about-content p{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+  }
+  .grid-cont .portfolio-text{
+    margin-top: -60%;
+  }
 }
-
-@media screen and (max-width: 576px) {
-  .banner-md {
-    display: block;
-    opacity: 0.5;
+@media screen and (max-width: 576px){
+  .nav-container{
+    width: 85%;
   }
-  .banner-md img {
-    margin-top: 10%;
+  .banner #home-svg{
+    height: 50px;
   }
-  .banner-caption {
-    margin-top: 50%;
+  #home-svg{
+    margin-top: -50%;
   }
-  .chevron-bod {
+  .banner-caption h1{
+    margin-top: 35%;
+  }
+  .banner-md{
+    width: 90%;
+  }
+  .about-img{
+    width: 200%;
+    height: 200%;
     margin-left: 50%;
-    margin-top: -170%;
-    transform: translateX(-50%);
+    transform: translateX(-60%);
   }
-  .grid-cont .portfolio-text {
-    margin-top: -75%;
+  section.about .about-content p{
+    font-family: "Open Sans", sans-serif;
+    line-height: 25px;
+    font-weight: 400;
+    font-size: 18px;
+    width: 100%;
+    margin-left: -30%;
+  }
+  .social-icons{
+    transform: translateX(-45%);
+  }
+  .grid-cont .portfolio-text{
+    margin-top: -80%;
+  }
+  .col-mob-6 {
+    margin-left: 40%;
+    transform: translateX(-40%);
   }
 }
 
@@ -1094,7 +1196,7 @@ body {
 
 .portfolio-text {
   color: #1a1a1a;
-  font-family: "Open-Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   margin-top: 2%;
   font-weight: 600;
   font-size: 35px;
@@ -1273,6 +1375,7 @@ body {
     width: 400px;
   }
 }
+
 /*Contact Section*/
 .contact {
   background-color: white;
