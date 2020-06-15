@@ -192,6 +192,18 @@ footer {
           margin: 0 auto;
           text-align: center; }  
 
+@media screen and (max-width: 768px){
+  .content{
+    margin-bottom: 600px;
+  }
+}
+
+@media screen and (max-width: 576px){
+  .content{
+    margin-bottom: 700px;
+  }
+}
+
 .footer-btn button{
   height: 40px;
   width: 100%;
