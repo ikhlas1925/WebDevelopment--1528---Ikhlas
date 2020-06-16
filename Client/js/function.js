@@ -50,47 +50,47 @@ $(document).ready(function () {
 });
 
 //Testimonials
-var featureSubmitBtn = document.getElementById("featureSubmitBtn");
-var featureFrm = document.getElementById("featureFrm");
-var featureLoadingDiv = document.getElementById("featureLoadingDiv");
+var testSubmitBtn = document.getElementById("testSubmitBtn");
+var testFrm = document.getElementById("testFrm");
+var testLoadingDiv = document.getElementById("testLoadingDiv");
 
-featureSubmitBtn.addEventListener("click", async function () {
+testSubmitBtn.addEventListener("click", async function () {
   // Make the loader div visible
-  featureLoadingDiv.classList.remove("human-removed");
+  testLoadingDiv.classList.remove("loader-removed");
   // Hide the form from the user
-  featureFrm.classList.add("human-removed");
-  await onfeaturesubmit();
-  featureFrm.reset();
-  featureLoadingDiv.classList.add("human-removed");
-  featureFrm.classList.remove("human-removed");
-  await onfeatureload()
+  testFrm.classList.add("loader-removed");
+  await ontestsubmit();
+  testFrm.reset();
+  testLoadingDiv.classList.add("loader-removed");
+  testFrm.classList.remove("loader-removed");
+  await ontestload()
 
 });
 
-async function onfeatureload() {
-  var response = await fetch("http://localhost:3000/features");
+async function ontestload() {
+  var response = await fetch("http://localhost:3000/testimonials");
   var result = await response.json();
 
-  var featureList = document.getElementById("feature-list")
-  featureList.innerHTML = "";
+  var testList = document.getElementById("test-list")
+  testList.innerHTML = "";
 
   for (var i = 0; i < result.length; i++) {
     var lielement = document.createElement("li");
     lielement.className = "list-group-item";
     lielement.innerHTML =
-      result[i].body + "<span class='badge badge-success'>" + result[i].author + "," + result[i].time + "</span>";
-    featureList.appendChild(lielement);
+      result[i].body + "<span class='badge badge-success'>" + result[i].author + ", Age - " + result[i].age + ", " + result[i].time + "</span>";
+    testList.appendChild(lielement);
   }
 
 }
-onfeatureload();
+ontestload();
 
-async function onfeaturesubmit() {
-  await fetch("http://localhost:3000/features", {
+async function ontestsubmit() {
+  await fetch("http://localhost:3000/testimonials", {
     method: "post",
     body: JSON.stringify({
       name: document.getElementById("username").value,
-      feature: document.getElementById("userfeature").value
+      test: document.getElementById("usertesti").value
     }),
     headers: {
       "content-type": "application/json"
