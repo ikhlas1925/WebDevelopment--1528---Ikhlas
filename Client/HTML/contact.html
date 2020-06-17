@@ -17,7 +17,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
         rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
 </head>
@@ -61,12 +61,14 @@
                     Hope you won’t mind. Don’t worry, we won’t spam you!
                 </p>
                 <div class="amdt-contact-form">
-                    <input type="text" placeholder="Full Name">
-                    <input type="email" placeholder="E-mail">
-                    <input type="text" id="msg" placeholder="Message">
+                    <form>
+                    <input type="name" id="name" placeholder="Full Name">
+                    <input type="email" id="email" placeholder="E-mail">
+                    <input type="text" id="text" placeholder="Message">
                     <div class="contact-btn">
-                        <button id="contactSendBtn" type="button">Send</button>
+                        <button id="contactSendBtn" type="submit" value="Submit">Send</button>
                     </div>
+                    </form>
                 </div>
             </div>
             <!--Footer-->
@@ -129,6 +131,7 @@
         </footer>
     </section>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
     <script>
         baguetteBox.run('.tz-gallery');

@@ -50,6 +50,7 @@ $(document).ready(function () {
 });
 
 //Testimonials
+/*
 var testSubmitBtn = document.getElementById("testSubmitBtn");
 var testFrm = document.getElementById("testFrm");
 var testLoadingDiv = document.getElementById("testLoadingDiv");
@@ -97,3 +98,23 @@ async function ontestsubmit() {
     }
   });
 }
+*/
+//Contact
+
+$('form').on('submit', (e)=>{
+  e.preventDefault();
+
+  const name = $('#name').val().trim();  
+  const email = $('#email').val().trim();  
+  const text = $('#text').val().trim();
+
+  const data = {
+    name,
+    email,
+    text
+  };
+  
+  $.post('/email', data, function(){
+    console.log('Server recieved');
+  });
+});;
