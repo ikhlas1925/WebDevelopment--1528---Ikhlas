@@ -17,7 +17,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
         rel="stylesheet">
-    
+
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
 </head>
@@ -62,12 +62,12 @@
                 </p>
                 <div class="amdt-contact-form">
                     <form>
-                    <input type="name" id="name" placeholder="Full Name">
-                    <input type="email" id="email" placeholder="E-mail">
-                    <input type="text" id="text" placeholder="Message">
-                    <div class="contact-btn">
-                        <button id="contactSendBtn" type="submit" value="Submit">Send</button>
-                    </div>
+                        <input type="name" id="name" placeholder="Full Name">
+                        <input type="email" id="email" placeholder="E-mail">
+                        <input type="text" id="text" placeholder="Message">
+                        <div class="contact-btn">
+                            <button id="contactSendBtn" type="submit" value="Submit">Send</button>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -120,7 +120,7 @@
 
                                 <br />
                                 <div class="footer-btn">
-                                    <button type="submit">Send</button>
+                                    <button type="footer-submit">Send</button>
                                 </div>
                             </form>
                         </div>
@@ -132,12 +132,26 @@
     </section>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
     <script>
-        baguetteBox.run('.tz-gallery');
+        $('form').on('submit', (e) => {
+            e.preventDefault();
+
+            const name = $('#name').val().trim();
+            const email = $('#email').val().trim();
+            const text = $('#text').val().trim();
+
+            const data = {
+                name,
+                email,
+                text
+            };
+
+            $.post('/email', data, function () {
+                console.log('Server recieved');
+            });
+        });;
     </script>
     <!--JS Script Import-->
-    <script src="../js/function.js"></script>
 
 </body>
 

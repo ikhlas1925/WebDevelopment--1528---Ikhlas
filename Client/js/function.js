@@ -79,7 +79,7 @@ async function ontestload() {
     var lielement = document.createElement("li");
     lielement.className = "list-group-item";
     lielement.innerHTML =
-      result[i].body + "<span class='badge badge-success'>" + result[i].name + ", Age - " + result[i].age + ", " + " test - " + result[i].test + ", " + result[i].time + "</span>";
+    "<span class='text-dark'>" +  result[i].test + "<br><span class='badge badge-success'>" + result[i].name + ", Age - " + result[i].age + ", " + result[i].time + "</br>";
     testList.appendChild(lielement);
   }
 
@@ -92,7 +92,7 @@ async function ontestsubmit() {
     method: "post",
     body: JSON.stringify({
       name: document.getElementById("username").value,
-      age: document.getElementById("username").age,
+      age: document.getElementById("age").value,
       test: document.getElementById("usertesti").value
     }),
     headers: {
@@ -102,20 +102,3 @@ async function ontestsubmit() {
 }
 //Contact
 
-$('form').on('submit', (e)=>{
-  e.preventDefault();
-
-  const name = $('#name').val().trim();  
-  const email = $('#email').val().trim();  
-  const text = $('#text').val().trim();
-
-  const data = {
-    name,
-    email,
-    text
-  };
-  
-  $.post('/email', data, function(){
-    console.log('Server recieved');
-  });
-});;

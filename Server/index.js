@@ -43,7 +43,7 @@ app.post("/testimonials", async function (req, res, next) {
   res.send("Successful");
 });
 
-app.listen(3000, function () {
+app.listen(5500, function () {
   console.log("Application is running on Port 3000");
 });
 
@@ -59,5 +59,5 @@ app.post('/email', (req, res) => {
 });
 
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, './client/html', 'contact.html'));
+  res.sendFile(path.join('/client', 'contact.html'));
 });
