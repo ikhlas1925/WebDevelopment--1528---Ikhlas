@@ -50,7 +50,7 @@ $(document).ready(function () {
 });
 
 //Testimonials
-/*
+
 var testSubmitBtn = document.getElementById("testSubmitBtn");
 var testFrm = document.getElementById("testFrm");
 var testLoadingDiv = document.getElementById("testLoadingDiv");
@@ -79,7 +79,7 @@ async function ontestload() {
     var lielement = document.createElement("li");
     lielement.className = "list-group-item";
     lielement.innerHTML =
-      result[i].body + "<span class='badge badge-success'>" + result[i].author + ", Age - " + result[i].age + ", " + result[i].time + "</span>";
+      result[i].body + "<span class='badge badge-success'>" + result[i].name + ", Age - " + result[i].age + ", " + " test - " + result[i].test + ", " + result[i].time + "</span>";
     testList.appendChild(lielement);
   }
 
@@ -87,10 +87,12 @@ async function ontestload() {
 ontestload();
 
 async function ontestsubmit() {
+  
   await fetch("http://localhost:3000/testimonials", {
     method: "post",
     body: JSON.stringify({
       name: document.getElementById("username").value,
+      age: document.getElementById("username").age,
       test: document.getElementById("usertesti").value
     }),
     headers: {
@@ -98,7 +100,6 @@ async function ontestsubmit() {
     }
   });
 }
-*/
 //Contact
 
 $('form').on('submit', (e)=>{

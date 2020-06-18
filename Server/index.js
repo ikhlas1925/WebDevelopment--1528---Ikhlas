@@ -32,10 +32,11 @@ app.get("/testimonials", async function (req, res, next) {
 });
 
 app.post("/testimonials", async function (req, res, next) {
+  console.log(req);
   var newTestiToAdd = {
-    body: req.body.testimonials,
-    author: req.body.name,
-    age: req.body.number,
+    test: req.body.test,
+    name: req.body.name,
+    age: req.body.age,
     time: Date.now()
   };
   await dbtestimonials.insert(newTestiToAdd);
